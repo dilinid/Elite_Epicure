@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #228b22;
+    font-family: sans-serif;
+}
+
+.headerbar{
+    display: none;
+}
+
+.searchicon{
+    display: block;
+}
+
+.logo img{
+    width: 230px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+.bar{
+    display: none;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color: white;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.header ul li:hover{
+    color: #ffa500;
+}
+
+.nav ul li{
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account{
+    flex: 0.1;
+}
+
+.account ul{
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li{
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.account ul li i:hover{
+    color: #ffa500;
+}
+
+.bar i:hover{
+    color: #ffa500;
+}
+
+.search{
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    border: n2px;
+    padding: 5px;
+}
+
+.srchicon{
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+    z-index: -1;
+
+    h1 {
+        padding-top: 40px;
+        color: #ffa500;
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+.header1{
+    display: grid;
+    padding-top: 60px;
+    background-color: transparent;
+    grid-template-columns: 1fr 50px;
+}
+.header1 .shopping{
+    position: relative;
+    text-align: right;
+}
+.header1 .shopping img{
+    width: 40px;
+    color: #ddd;
+}
+.header1 .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background-color: #dce0e180;
+    padding: 10px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 90%;
+    height: 150px;
+    width: 150px;
+    
+}
+.list .item .title{
+    font-weight: bolder;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #73e32d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 80%;
+    font-weight: bolder;
+    padding: 10px;
+}
+.cart{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: rgb(255, 255, 172);
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .cart{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.cart h1{
+    font-weight: 600; 
+    font-weight: bold;
+    margin: 50px;
+    display: flex;
+}
+.cart .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.cart .checkOut div{
+    background-color: #ffa500;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cart .checkOut div:nth-child(2){
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.listCart li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCart li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCart li img{
+    width: 90%;
+}
+.listCart li button{
+    background-color: white;
+    border-radius:50%;
+    border: none;
+    width: 20px;
+    font-weight: bolder;
+    height: 20px;
+}
+
+.listCart .count{
+    margin: 0 20px;
+    font-weight: bold;
+}
+.place_btn {
+    color: white;
+    background-color: #228b22;
+    width: 200%;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
